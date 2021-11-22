@@ -1,0 +1,77 @@
+ shortcuts for react
+1. rfc is for react function
+2. use is for useState syntax
+3. rfcs is for react and state import
+
+
+1. what is mltipage site?
+ans : when a clint send a request (for any sites) then that server send the hole HTML, CSS, JAVSCRIPT. and show 
+the reault of the request that called miltipage side.
+
+2. single page sites?
+when a client send a request then the server then the HTML,CSSM jAVASCRIPT then the javascript take control the whole page and 
+manuplate the site through APIs and the help in requce bandwidths.
+
+3. props?
+props full form is property, with the help of porps we can define or change or parse our coponents value and reuse it.
+
+4. porpsTypes
+propsType shoe error if we assign diffent datatypes like, if we assign 'title' : "string" so we can't assign number in our react app, it show error.
+we can use ".isRequired" after we assign data type and its show error if we did't assign any value, this method is optional.
+if we assing value in out defalt proptype then this method did'nt show any error because we parse default value throungh our conponents.
+
+syntex:
+1. first we import propsType
+import PropTypes from 'prop-types'
+
+2. then we create a object and assign our date types
+
+# Navbar.propsTypes= {
+#     title : PropTypes.string,
+#     aboutText: PropTypes.string
+#     }
+
+
+5. default proe types
+this prope type assign defult tag'e value and show the vau before parse ny value, if the default value is change then the app shoe the change
+ value
+
+              Syntax:
+
+1. we import our prope types
+import PropTypes from 'prop-types'
+
+2. then we create a object and assing the default value in it.
+# Navbar.defaultProps= {
+#     title : "set any title here",
+#     aboutText : "Change about text"
+# } 
+
+6. hooks 
+hooks use as the {this.state} in the function.
+
+7. state
+state is variable that watch by react and show the changes.
+
+8. <>
+this is a JSX fragment and this tag use when you have to add more that one tags in your react function because react funcation allow only one
+html tage and put all your html tags in it.
+</>
+
+9. you can add css in your react file but you have to make a javascript object at the top of the react function and then add in your component. 
+like this.
+Syntax
+ like we change "background-color : red;" into this syntax "backgroundColor :red,", we use "," becase this syntax use in javascript object
+1. js object and always use camelCase
+# const your styling object name = {
+#     color : 'red',
+# backgroundColor :'blue',
+# }
+
+
+2. and add this syntax in your component
+style = {your styling object name}
+
+10. REACT ROUTER - 
+insted of fullpage re-load and parse navbar and other componets again and again, react router help us to parse only that component that the 
+actual user wants that reduse server bandwidth and user's data both. and react router faster the navigation from one-page to another.
